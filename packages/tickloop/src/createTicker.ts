@@ -29,11 +29,12 @@ export const createTicker = (options?: TickerOptions): Ticker => {
   let nextTime = gap
   let delta = 0
 
+  const hasWindow = typeof window !== 'undefined'
   let id = 0
-  const request =
-    window?.requestAnimationFrame ??
-    ((callback: Callback) => setTimeout(callback, (nextTime - previousTime + 1) | 0))
-  const cancel = window?.cancelAnimationFrame ?? clearTimeout
+  const request = hasWindow
+    ? window.requestAnimationFrame
+    : (callback: Callback) => setTimeout(callback, (nextTime - previousTime + 1) | 0)
+  const cancel = hasWindow ? window.cancelAnimationFrame : clearTimeout
 
   const tick = (v: boolean | number) => {
     const elapsed = getTime() - lagAdjustedLastUpdate
