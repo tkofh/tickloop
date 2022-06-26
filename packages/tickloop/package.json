@@ -44,5 +44,6 @@
   },
   "dependencies": {
     "gsap": "^3.10.4"
-  }
+  },
+  "gitHead": "c90fffa22b446ed4e60cc64d3c30d279f8d11bb4"
 }
