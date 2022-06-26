@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/tkofh/tickloop/compare/tickloop@0.3.0...tickloop@0.4.0) (2022-06-26)
+
+### Bug Fixes
+
+- test ([381be29](https://github.com/tkofh/tickloop/commit/381be293ff84533f6bdaa75f4bc73bfa90cb1372))
+- types ([aa007e5](https://github.com/tkofh/tickloop/commit/aa007e5de972d415f86cc24eadaefc972973acda))
+
 # [0.3.0](https://github.com/tkofh/tickloop/compare/tickloop@0.2.0...tickloop@0.3.0) (2022-06-26)
 
 ### Bug Fixes
