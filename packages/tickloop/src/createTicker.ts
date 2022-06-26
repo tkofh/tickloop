@@ -1,4 +1,4 @@
-import type { Callback, TickCallback, TickerOptions, Ticker } from './types'
+import type { Request, TickCallback, TickerOptions, Ticker } from './types'
 
 const defaults: Required<TickerOptions> = {
   fps: 60,
@@ -31,9 +31,10 @@ export const createTicker = (options?: TickerOptions): Ticker => {
 
   const hasWindow = typeof window !== 'undefined'
   let id = 0
-  const request = hasWindow
+  const request: Request = hasWindow
     ? window.requestAnimationFrame
-    : (callback: Callback) => setTimeout(callback, (nextTime - previousTime + 1) | 0)
+    : (callback): number =>
+        (setTimeout as typeof window['setTimeout'])(callback, (nextTime - previousTime + 1) | 0)
   const cancel = hasWindow ? window.cancelAnimationFrame : clearTimeout
 
   const tick = (v: boolean | number) => {

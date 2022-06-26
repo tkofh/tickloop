@@ -1,4 +1,4 @@
-export type Callback = (...args: unknown[]) => void
+export type Request = (callback: (v: number | boolean) => void) => number
 
 export type TickCallback = (time: number, delta: number, frame: number) => void
 
