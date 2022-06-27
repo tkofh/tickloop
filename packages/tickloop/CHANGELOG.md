@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://github.com/tkofh/tickloop/compare/tickloop@0.4.1...tickloop@0.4.2) (2022-06-27)
+
+### Bug Fixes
+
+- remove unused dep ([2112697](https://github.com/tkofh/tickloop/commit/2112697df684202cc4efdc78d9d7749acc2d19f6))
+
 ## [0.4.1](https://github.com/tkofh/tickloop/compare/tickloop@0.4.0...tickloop@0.4.1) (2022-06-27)
 
 ### Features
