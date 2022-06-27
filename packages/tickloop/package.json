@@ -42,8 +42,5 @@
     "tsup": "^5.12.7",
     "vitest": "^0.11.0"
   },
-  "dependencies": {
-    "gsap": "^3.10.4"
-  },
   "gitHead": "daa255c8d2dd60fdf5e1a984f87add539997c6e9"
 }
