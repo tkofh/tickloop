@@ -1,6 +1,6 @@
 import type { Request, TickCallback, TickerOptions, Ticker } from './types'
 
-const defaults: Required<TickerOptions> = {
+export const defaultOptions: Required<TickerOptions> = {
   fps: 60,
   lagThreshold: 500,
   adjustedLag: 33,
@@ -10,10 +10,10 @@ const defaults: Required<TickerOptions> = {
 export const createTicker = (options?: TickerOptions): Ticker => {
   const getTime = Date.now
 
-  let fps = options?.fps ?? defaults.fps
+  let fps = options?.fps ?? defaultOptions.fps
 
-  let lagThreshold = options?.lagThreshold ?? defaults.lagThreshold
-  let adjustedLag = options?.adjustedLag ?? defaults.adjustedLag
+  let lagThreshold = options?.lagThreshold ?? defaultOptions.lagThreshold
+  let adjustedLag = options?.adjustedLag ?? defaultOptions.adjustedLag
 
   let lagAdjustedStartTime = getTime()
   let lagAdjustedLastUpdate = lagAdjustedStartTime
@@ -66,7 +66,7 @@ export const createTicker = (options?: TickerOptions): Ticker => {
     }
   }
 
-  let stopped = options?.stopped ?? defaults.stopped
+  let stopped = options?.stopped ?? defaultOptions.stopped
 
   if (!stopped) {
     tick(0)
