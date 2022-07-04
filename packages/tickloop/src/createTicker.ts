@@ -129,7 +129,7 @@ export const createTicker = (options?: TickerOptions): Ticker => {
     },
     once: (callback: TickCallback) => {
       const cb = (...args: Parameters<TickCallback>) => {
-        // eslint-disable-next-line node/no-callback-literal
+        // eslint-disable-next-line n/no-callback-literal
         callback(...args)
         listeners.delete(cb)
       }
