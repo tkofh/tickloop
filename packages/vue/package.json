@@ -1,0 +1,50 @@
+{
+  "name": "@tickloop/vue",
+  "version": "0.0.0",
+  "description": "Simple and performant wrapper around requestAnimationFrame for Vue.js",
+  "author": "Tim Morris <timthewebguy@gmail.com>",
+  "homepage": "https://github.com/tkofh/tickloop#readme",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkofh/tickloop.git"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "yarn build"
+  },
+  "bugs": {
+    "url": "https://github.com/tkofh/tickloop/issues"
+  },
+  "devDependencies": {
+    "@vitest/ui": "^0.11.0",
+    "tsup": "^5.12.7",
+    "vitest": "^0.11.0",
+    "vue": "^3.2.37"
+  },
+  "gitHead": "daa255c8d2dd60fdf5e1a984f87add539997c6e9",
+  "dependencies": {
+    "tickloop": "^0.4.2"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.37"
+  }
+}
