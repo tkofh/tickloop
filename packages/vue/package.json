@@ -1,6 +1,6 @@
 {
   "name": "@tickloop/vue",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple and performant wrapper around requestAnimationFrame for Vue.js",
   "author": "Tim Morris <timthewebguy@gmail.com>",
   "homepage": "https://github.com/tkofh/tickloop#readme",
@@ -42,7 +42,7 @@
   },
   "gitHead": "daa255c8d2dd60fdf5e1a984f87add539997c6e9",
   "dependencies": {
-    "tickloop": "^0.4.2"
+    "tickloop": "0.5.0"
   },
   "peerDependencies": {
     "vue": "^3.2.37"
