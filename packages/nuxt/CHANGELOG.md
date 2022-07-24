@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/tkofh/tickloop/compare/@tickloop/nuxt@0.1.0...@tickloop/nuxt@0.1.1) (2022-07-24)
+
+**Note:** Version bump only for package @tickloop/nuxt
+
 # 0.1.0 (2022-07-24)
 
 ### Features
