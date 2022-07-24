@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/tkofh/tickloop/compare/@tickloop/nuxt@0.1.1...@tickloop/nuxt@0.2.0) (2022-07-24)
+
+### Bug Fixes
+
+- **nuxt:** specify public ([d572f81](https://github.com/tkofh/tickloop/commit/d572f81536393b0e15e3e66ab81dc3f09a16ffa4))
+
 ## [0.1.1](https://github.com/tkofh/tickloop/compare/@tickloop/nuxt@0.1.0...@tickloop/nuxt@0.1.1) (2022-07-24)
 
 **Note:** Version bump only for package @tickloop/nuxt
