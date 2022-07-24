@@ -1,8 +1,11 @@
 {
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": ["**/nuxt", "**/nuxt/**"]
+  },
   "scripts": {
     "lint": "eslint --fix ./packages/",
     "format": "prettier --write ./packages/*",
