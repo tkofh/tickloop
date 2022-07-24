@@ -14,6 +14,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
@@ -30,5 +33,5 @@
     "nuxt": "^3.0.0-rc.6",
     "vue": "^3.2.37"
   },
-  "gitHead": "d26139ab8de5c764e2ae3e4d370baef146d6a920"
+  "gitHead": "66fb4ba242ed99e03aa08c6def13c2b0c00927bb"
 }
