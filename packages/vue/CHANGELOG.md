@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/tkofh/tickloop/compare/@tickloop/vue@0.1.0...@tickloop/vue@0.2.0) (2022-09-03)
+
+**Note:** Version bump only for package @tickloop/vue
+
 # 0.1.0 (2022-07-17)
 
 ### Features
