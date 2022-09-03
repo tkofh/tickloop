@@ -3,12 +3,11 @@ import type { Ticker, TickerOptions } from 'tickloop'
 import { createTicker } from 'tickloop'
 import { TICKER } from './injections'
 
-type TickerPluginOptions = TickerOptions | { instance: Ticker }
+type TickerPluginOptions = TickerOptions | { ticker: Ticker }
 
 export const tickloopPlugin: Plugin = {
   install: (app, options?: TickerPluginOptions) => {
-    const ticker =
-      options != null && 'instance' in options ? options.instance : createTicker(options)
+    const ticker = options != null && 'ticker' in options ? options.ticker : createTicker(options)
 
     app.provide(TICKER, ticker)
   },
